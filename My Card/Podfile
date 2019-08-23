@@ -7,5 +7,6 @@ target 'My Card' do
 
   # Pods for My Card
   pod 'DeviceKit', '~> 0.3.1'
+  pod 'Firebase/Auth'
 
 end
