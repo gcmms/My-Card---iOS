@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroud-card" translatesAutoresizingMaskIntoConstraints="NO" id="ZfN-v9-rMk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="fc-logo" translatesAutoresizingMaskIntoConstraints="NO" id="00B-2O-T16">
+                                <rect key="frame" x="57" y="357" width="297" height="172"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="00B-2O-T16" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="340" id="1c1-YN-RRK"/>
+                            <constraint firstItem="00B-2O-T16" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="4DL-C2-qIo"/>
+                            <constraint firstItem="ZfN-v9-rMk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5vd-sz-fhS"/>
+                            <constraint firstItem="ZfN-v9-rMk" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="6WN-g0-9hs"/>
+                            <constraint firstAttribute="bottom" secondItem="ZfN-v9-rMk" secondAttribute="bottom" id="Q0q-sT-GxD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="00B-2O-T16" secondAttribute="bottom" constant="350" id="RvW-9t-Oyz"/>
+                            <constraint firstItem="ZfN-v9-rMk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="SRj-fG-cjM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="00B-2O-T16" secondAttribute="trailing" constant="87" id="sBR-V2-dRx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroud-card" width="1440" height="720"/>
+        <image name="fc-logo" width="2161" height="472"/>
+    </resources>
+</document>
