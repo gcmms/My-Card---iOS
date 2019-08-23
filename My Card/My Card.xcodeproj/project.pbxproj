@@ -18,9 +18,11 @@
 		51B0C8062310585A003D55AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0C8052310585A003D55AA /* LoginViewController.swift */; };
 		51B0C808231059D5003D55AA /* userLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0C807231059D5003D55AA /* userLogin.swift */; };
 		51B0C80B23106349003D55AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0C80A23106349003D55AA /* User.swift */; };
+		B26FE1075447B2744D53CB5F /* Pods_My_Card.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3EAB9C082DD93F1B80460F /* Pods_My_Card.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FCB6FA1A4F82CA01893740E /* Pods-My Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Card.debug.xcconfig"; path = "Target Support Files/Pods-My Card/Pods-My Card.debug.xcconfig"; sourceTree = "<group>"; };
 		51360411230F619B00C55BC9 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		51A03B5F230E396500CD455D /* My Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A03B62230E396500CD455D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +36,8 @@
 		51B0C8052310585A003D55AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		51B0C807231059D5003D55AA /* userLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLogin.swift; sourceTree = "<group>"; };
 		51B0C80A23106349003D55AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5F3EAB9C082DD93F1B80460F /* Pods_My_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89C6F118E0AC357ABC65E00 /* Pods-My Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Card.release.xcconfig"; path = "Target Support Files/Pods-My Card/Pods-My Card.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26FE1075447B2744D53CB5F /* Pods_My_Card.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				51A03B61230E396500CD455D /* My Card */,
 				51A03B60230E396500CD455D /* Products */,
+				D1202D2D2C7BAC23324D38DC /* Pods */,
+				F27AF9BDB737777E1E5A3490 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +105,24 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		D1202D2D2C7BAC23324D38DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FCB6FA1A4F82CA01893740E /* Pods-My Card.debug.xcconfig */,
+				D89C6F118E0AC357ABC65E00 /* Pods-My Card.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F27AF9BDB737777E1E5A3490 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F3EAB9C082DD93F1B80460F /* Pods_My_Card.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +130,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 51A03B73230E396600CD455D /* Build configuration list for PBXNativeTarget "My Card" */;
 			buildPhases = (
+				4F97F9401D57E8C5345807A5 /* [CP] Check Pods Manifest.lock */,
 				51A03B5B230E396500CD455D /* Sources */,
 				51A03B5C230E396500CD455D /* Frameworks */,
 				51A03B5D230E396500CD455D /* Resources */,
+				121238BAD7A7A78B9DB40D2E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +190,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		121238BAD7A7A78B9DB40D2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My Card/Pods-My Card-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-My Card/Pods-My Card-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-My Card/Pods-My Card-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F97F9401D57E8C5345807A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-My Card-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		51A03B5B230E396500CD455D /* Sources */ = {
@@ -320,6 +389,7 @@
 		};
 		51A03B74230E396600CD455D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FCB6FA1A4F82CA01893740E /* Pods-My Card.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -337,6 +407,7 @@
 		};
 		51A03B75230E396600CD455D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D89C6F118E0AC357ABC65E00 /* Pods-My Card.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
