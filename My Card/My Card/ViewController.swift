@@ -29,9 +29,11 @@ class ViewController: UIViewController {
         cardTitular.text = myCard.cardTitular
         cardVencimento.text = myCard.cardVencimento
         cardCVV.text = "\(myCard.cardCVV)"
-    
+        
     }
-  
+    
+
+    
 
 
 }

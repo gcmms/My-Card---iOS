@@ -7,27 +7,56 @@
 //
 
 import Foundation
+import Firebase
 
 
 class userLogin {
-    private var usuario: User
-    private var id: Int
-    private var nome:String
-    private var sobrenome:String
-    private var dataNasc: Date
-    private var cpf: Int
-    private var senha: String
+    //private var email: String
+    //private var senha: String
+    private let usuario =  Auth.auth()
+    private var validate = false
     
-
+    func deslogaUsuario(){
+        do {
+            try self.usuario.signOut()
+        } catch {
+            print("Erro ao deslogar usuario")
+        }
     }
 
-    init(cpf: Int, senha:String) {
-        return
+    func logaUsuario(email:String, senha:String){
+        self.usuario.signIn(withEmail: email, password: senha) { (usuario, erro) in
+            if erro == nil {
+                print("Sucesso ao logar usuario!")
+            }else{
+                print("Erro ao logar usuario! \(String(describing: erro?.localizedDescription)) ")
+            }
+        }
     }
-
-    init(teste:String) {
-        return
+    
+    func cadastraUsuario(email: String, senha: String)->Bool {
+        // CRIANDO NOVO USUARIO
+        self.validate = false
+         usuario.createUser(withEmail: email, password: senha) { (usuario, erro) in
+            if erro == nil {
+                self.validate = true
+                let uiView = UIViewController()
+                print("FIREBASE:: Cadastro realizado ")
+                uiView.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }else{
+                print("FIREBASE:: Erro Cadastro")
+                print("Aconteceu algum erro:" + String(describing: erro?.localizedDescription ) )
+            }
+            
+        }
+        if self.validate {
+            return true
+        } else {
+            return false
+        }
     }
+    
+    
     
  
 }

@@ -9,7 +9,7 @@
 import Foundation
 
 struct User {
-    let usuario: User
+    let usuario: String
     let id: Int
     let nome:String
     let sobrenome:String

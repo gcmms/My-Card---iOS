@@ -6,7 +6,8 @@ target 'My Card' do
   use_frameworks!
 
   # Pods for My Card
-  pod 'DeviceKit', '~> 0.3.1'
+  # pod 'DeviceKit', '~> 0.3.1'
   pod 'Firebase/Auth'
+  pod 'Firebase/Analytics'
 
 end

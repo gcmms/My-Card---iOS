@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		51360412230F619B00C55BC9 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51360411230F619B00C55BC9 /* Card.swift */; };
+		51874F542315EF610077084A /* ErroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51874F532315EF610077084A /* ErroViewController.swift */; };
 		51A03B63230E396500CD455D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A03B62230E396500CD455D /* AppDelegate.swift */; };
 		51A03B65230E396500CD455D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A03B64230E396500CD455D /* SceneDelegate.swift */; };
 		51A03B67230E396500CD455D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A03B66230E396500CD455D /* ViewController.swift */; };
@@ -18,12 +19,16 @@
 		51B0C8062310585A003D55AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0C8052310585A003D55AA /* LoginViewController.swift */; };
 		51B0C808231059D5003D55AA /* userLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0C807231059D5003D55AA /* userLogin.swift */; };
 		51B0C80B23106349003D55AA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0C80A23106349003D55AA /* User.swift */; };
+		51B0C81023107BAE003D55AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51B0C80F23107BAE003D55AA /* GoogleService-Info.plist */; };
+		51B0C8172310910B003D55AA /* CadastrarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B0C8162310910B003D55AA /* CadastrarViewController.swift */; };
 		B26FE1075447B2744D53CB5F /* Pods_My_Card.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3EAB9C082DD93F1B80460F /* Pods_My_Card.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FFAA9E259C6E819E2BBB585 /* Pods-My Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Card.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Card/Pods-My Card.debug.xcconfig"; sourceTree = "<group>"; };
 		1FCB6FA1A4F82CA01893740E /* Pods-My Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Card.debug.xcconfig"; path = "Target Support Files/Pods-My Card/Pods-My Card.debug.xcconfig"; sourceTree = "<group>"; };
 		51360411230F619B00C55BC9 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		51874F532315EF610077084A /* ErroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErroViewController.swift; path = "/Users/gcmms/GitHub/My-Card---iOS/My Card/My Card/ErroViewController.swift"; sourceTree = "<absolute>"; };
 		51A03B5F230E396500CD455D /* My Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A03B62230E396500CD455D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51A03B64230E396500CD455D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +41,10 @@
 		51B0C8052310585A003D55AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		51B0C807231059D5003D55AA /* userLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLogin.swift; sourceTree = "<group>"; };
 		51B0C80A23106349003D55AA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		51B0C80F23107BAE003D55AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		51B0C8162310910B003D55AA /* CadastrarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CadastrarViewController.swift; sourceTree = "<group>"; };
 		5F3EAB9C082DD93F1B80460F /* Pods_My_Card.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_My_Card.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91DEDCCAAFFA62AA0D3DA92B /* Pods-My Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Card.release.xcconfig"; path = "Pods/Target Support Files/Pods-My Card/Pods-My Card.release.xcconfig"; sourceTree = "<group>"; };
 		D89C6F118E0AC357ABC65E00 /* Pods-My Card.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Card.release.xcconfig"; path = "Target Support Files/Pods-My Card/Pods-My Card.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -52,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		513F10652315EFC500F78796 /* ComponentesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				51874F532315EF610077084A /* ErroViewController.swift */,
+			);
+			path = ComponentesViewController;
+			sourceTree = "<group>";
+		};
 		51A03B56230E396500CD455D = {
 			isa = PBXGroup;
 			children = (
@@ -76,12 +92,14 @@
 				51A03B62230E396500CD455D /* AppDelegate.swift */,
 				51A03B64230E396500CD455D /* SceneDelegate.swift */,
 				51A03B66230E396500CD455D /* ViewController.swift */,
+				513F10652315EFC500F78796 /* ComponentesViewController */,
 				51B0C80C2310634F003D55AA /* User */,
 				51A03B68230E396500CD455D /* Main.storyboard */,
 				51B0C80923105A09003D55AA /* Card */,
 				51A03B6B230E396600CD455D /* Assets.xcassets */,
 				51A03B6D230E396600CD455D /* LaunchScreen.storyboard */,
 				51A03B70230E396600CD455D /* Info.plist */,
+				51B0C80F23107BAE003D55AA /* GoogleService-Info.plist */,
 			);
 			path = "My Card";
 			sourceTree = "<group>";
@@ -98,11 +116,20 @@
 		51B0C80C2310634F003D55AA /* User */ = {
 			isa = PBXGroup;
 			children = (
-				51B0C8052310585A003D55AA /* LoginViewController.swift */,
-				51B0C807231059D5003D55AA /* userLogin.swift */,
+				51B0C811231090A2003D55AA /* View */,
 				51B0C80A23106349003D55AA /* User.swift */,
+				51B0C807231059D5003D55AA /* userLogin.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		51B0C811231090A2003D55AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51B0C8052310585A003D55AA /* LoginViewController.swift */,
+				51B0C8162310910B003D55AA /* CadastrarViewController.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		D1202D2D2C7BAC23324D38DC /* Pods */ = {
@@ -110,8 +137,9 @@
 			children = (
 				1FCB6FA1A4F82CA01893740E /* Pods-My Card.debug.xcconfig */,
 				D89C6F118E0AC357ABC65E00 /* Pods-My Card.release.xcconfig */,
+				0FFAA9E259C6E819E2BBB585 /* Pods-My Card.debug.xcconfig */,
+				91DEDCCAAFFA62AA0D3DA92B /* Pods-My Card.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -184,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				51A03B6F230E396600CD455D /* LaunchScreen.storyboard in Resources */,
+				51B0C81023107BAE003D55AA /* GoogleService-Info.plist in Resources */,
 				51A03B6C230E396600CD455D /* Assets.xcassets in Resources */,
 				51A03B6A230E396500CD455D /* Main.storyboard in Resources */,
 			);
@@ -238,7 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51874F542315EF610077084A /* ErroViewController.swift in Sources */,
 				51B0C8062310585A003D55AA /* LoginViewController.swift in Sources */,
+				51B0C8172310910B003D55AA /* CadastrarViewController.swift in Sources */,
 				51A03B67230E396500CD455D /* ViewController.swift in Sources */,
 				51B0C80423103320003D55AA /* CardLogic.swift in Sources */,
 				51360412230F619B00C55BC9 /* Card.swift in Sources */,

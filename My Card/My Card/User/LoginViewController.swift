@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
-
-    @IBOutlet weak var labelCPF: UITextField!
+    
+    var user = userLogin()
+    @IBOutlet weak var labelEmail: UITextField!
     @IBOutlet weak var labelSenha: UITextField!
     
     
@@ -21,17 +24,22 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func btnEntrar(_ sender: Any) {
-        
+        user.logaUsuario(email: labelEmail.text!, senha: labelSenha.text!)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func showMessage(mensagem: String, withIdentifier: String?) {
+        let title = "Atenção"
+        
+        let alert = UIAlertController(title: title, message: mensagem, preferredStyle: .alert)
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel, handler: nil)
+        alert.addAction(cancelAction)
+        if let withIdentifier = withIdentifier {
+            let confirmaAction = UIAlertAction(title: "Ok", style: .default) { (action) in
+                self.performSegue(withIdentifier: withIdentifier, sender: nil)
+            }
+            alert.addAction(confirmaAction)
+        }
+        present(alert, animated: true, completion: nil)
     }
-    */
 
 }
