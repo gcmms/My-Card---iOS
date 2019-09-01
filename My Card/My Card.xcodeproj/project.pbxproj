@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51273BEC231C59D6006A5B10 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51273BEB231C59D6006A5B10 /* StartViewController.swift */; };
 		51360412230F619B00C55BC9 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51360411230F619B00C55BC9 /* Card.swift */; };
 		51874F542315EF610077084A /* ErroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51874F532315EF610077084A /* ErroViewController.swift */; };
 		51A03B63230E396500CD455D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51A03B62230E396500CD455D /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		0FFAA9E259C6E819E2BBB585 /* Pods-My Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Card.debug.xcconfig"; path = "Pods/Target Support Files/Pods-My Card/Pods-My Card.debug.xcconfig"; sourceTree = "<group>"; };
 		1FCB6FA1A4F82CA01893740E /* Pods-My Card.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-My Card.debug.xcconfig"; path = "Target Support Files/Pods-My Card/Pods-My Card.debug.xcconfig"; sourceTree = "<group>"; };
+		51273BEB231C59D6006A5B10 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		51360411230F619B00C55BC9 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		51874F532315EF610077084A /* ErroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErroViewController.swift; path = "/Users/gcmms/GitHub/My-Card---iOS/My Card/My Card/ErroViewController.swift"; sourceTree = "<absolute>"; };
 		51A03B5F230E396500CD455D /* My Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				51B0C8052310585A003D55AA /* LoginViewController.swift */,
+				51273BEB231C59D6006A5B10 /* StartViewController.swift */,
 				51B0C8162310910B003D55AA /* CadastrarViewController.swift */,
 			);
 			name = View;
@@ -272,6 +275,7 @@
 				51B0C8172310910B003D55AA /* CadastrarViewController.swift in Sources */,
 				51A03B67230E396500CD455D /* ViewController.swift in Sources */,
 				51B0C80423103320003D55AA /* CardLogic.swift in Sources */,
+				51273BEC231C59D6006A5B10 /* StartViewController.swift in Sources */,
 				51360412230F619B00C55BC9 /* Card.swift in Sources */,
 				51B0C80B23106349003D55AA /* User.swift in Sources */,
 				51A03B63230E396500CD455D /* AppDelegate.swift in Sources */,

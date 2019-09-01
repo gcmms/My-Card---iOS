@@ -531,10 +531,10 @@
             </objects>
             <point key="canvasLocation" x="-346.37681159420293" y="823.66071428571422"/>
         </scene>
-        <!--View Controller-->
+        <!--Start View Controller-->
         <scene sceneID="Ihe-6o-cpI">
             <objects>
-                <viewController id="ssx-nV-aul" sceneMemberID="viewController">
+                <viewController id="ssx-nV-aul" customClass="StartViewController" customModule="My_Card" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eTm-ZY-IaA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -827,7 +827,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Lr0-8K-SEh"/>
-        <segue reference="oPy-xF-t0y"/>
+        <segue reference="RYZ-Jy-wTW"/>
+        <segue reference="usd-3j-MyC"/>
     </inferredMetricsTieBreakers>
 </document>
