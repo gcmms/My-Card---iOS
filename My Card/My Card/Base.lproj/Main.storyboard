@@ -157,6 +157,9 @@
                                     <constraint firstAttribute="height" constant="30" id="Ofm-7c-WLW"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="user"/>
+                                <connections>
+                                    <action selector="pictureButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PYm-rz-0Ih"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gabriel Sanzone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfG-AA-bT3">
                                 <rect key="frame" x="75" y="49" width="121" height="21"/>
