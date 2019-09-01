@@ -24,11 +24,10 @@ class ErroAlert: UIViewController {
     func showMessage(type: ErroMessageType) {
         let title: String, message: String
         var hasConfirmation: Bool = false
-        
         switch type {
             case .senhaNaoConfere:
-                title   = "As Senhas Não Conferem"
-                message = "Porfavor digite a mesma senha nos dois campos"
+                title   = "Senha Incorreta"
+                message = "Reescreva as senhas"
                 hasConfirmation = true
             case .senha:
                 title   = "Local Encontrado"

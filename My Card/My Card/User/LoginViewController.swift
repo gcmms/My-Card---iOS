@@ -10,21 +10,41 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
+
+
 class LoginViewController: UIViewController {
     
     var user = userLogin()
     @IBOutlet weak var labelEmail: UITextField!
     @IBOutlet weak var labelSenha: UITextField!
     
+    /** @var handle
+     @brief The handler for the auth state listener, to allow cancelling later.
+     */
+    //var handle: AuthStateDidChangeListenerHandle?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+
     }
     
     @IBAction func btnEntrar(_ sender: Any) {
-        user.logaUsuario(email: labelEmail.text!, senha: labelSenha.text!)
+        let email = labelEmail.text!
+        let senha = labelSenha.text!
+        Auth.auth().signIn(withEmail:email, password: senha) { (user, error) in
+            if error == nil{
+                self.performSegue(withIdentifier: "UsuarioIdentificado", sender: self)
+            }
+            else{
+                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
     }
     
     func showMessage(mensagem: String, withIdentifier: String?) {

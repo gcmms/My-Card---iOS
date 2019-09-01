@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ODX-NQ-mRj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ssx-nV-aul">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
@@ -218,7 +218,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="702.89855072463774" y="93.75"/>
+            <point key="canvasLocation" x="657" y="238"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="F7c-m4-KEa">
@@ -524,18 +524,91 @@
                         <outlet property="nomeLabel" destination="vG8-3A-taA" id="vK3-nr-F8N"/>
                         <outlet property="senhaLabel" destination="aW7-eL-lhn" id="9XL-TZ-4tl"/>
                         <outlet property="telefoneLabel" destination="lse-6C-gj3" id="Ir3-wG-KmF"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="UsuarioIdentificado" id="cWv-sh-AWj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CZt-1b-qUV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-346.37681159420293" y="823.66071428571422"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Ihe-6o-cpI">
+            <objects>
+                <viewController id="ssx-nV-aul" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eTm-ZY-IaA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroud-card" translatesAutoresizingMaskIntoConstraints="NO" id="HN8-qG-Hbs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="896" id="NdK-LB-izC"/>
+                                    <constraint firstAttribute="width" secondItem="HN8-qG-Hbs" secondAttribute="height" multiplier="207:448" id="gCm-LJ-yMU"/>
+                                    <constraint firstAttribute="width" constant="414" id="nxW-X6-Dz1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8V-xT-OBz">
+                                <rect key="frame" x="0.0" y="805" width="414" height="42"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="7je-rK-YFn"/>
+                                    <constraint firstAttribute="width" secondItem="U8V-xT-OBz" secondAttribute="height" multiplier="69:7" id="OCk-M4-vSs"/>
+                                    <constraint firstAttribute="width" constant="414" id="WHd-9i-F9e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Criar Uma Conta">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="3Bp-Kc-6RS" kind="show" id="RYZ-Jy-wTW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54z-kF-eam">
+                                <rect key="frame" x="0.0" y="748" width="414" height="57"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="CL1-N4-huL"/>
+                                    <constraint firstAttribute="width" constant="414" id="D7D-5m-8rz"/>
+                                    <constraint firstAttribute="width" secondItem="54z-kF-eam" secondAttribute="height" multiplier="138:19" id="Zep-Xj-BbO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Entrar">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ODX-NQ-mRj" kind="show" id="zn0-gp-uev"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="U8V-xT-OBz" firstAttribute="trailing" secondItem="7xB-tH-bpi" secondAttribute="trailing" id="4ZA-Q1-E7A"/>
+                            <constraint firstItem="HN8-qG-Hbs" firstAttribute="centerX" secondItem="eTm-ZY-IaA" secondAttribute="centerX" id="Ceh-uf-0ba"/>
+                            <constraint firstItem="7xB-tH-bpi" firstAttribute="bottom" secondItem="U8V-xT-OBz" secondAttribute="bottom" constant="15" id="H16-Hc-UwA"/>
+                            <constraint firstItem="54z-kF-eam" firstAttribute="trailing" secondItem="7xB-tH-bpi" secondAttribute="trailing" id="Ogz-Tr-vIe"/>
+                            <constraint firstItem="U8V-xT-OBz" firstAttribute="top" secondItem="54z-kF-eam" secondAttribute="bottom" id="S6a-ZU-Zal"/>
+                            <constraint firstItem="54z-kF-eam" firstAttribute="leading" secondItem="7xB-tH-bpi" secondAttribute="leading" id="exb-KY-RUX"/>
+                            <constraint firstItem="U8V-xT-OBz" firstAttribute="top" secondItem="54z-kF-eam" secondAttribute="bottom" id="kaA-KV-Lup"/>
+                            <constraint firstItem="HN8-qG-Hbs" firstAttribute="centerY" secondItem="eTm-ZY-IaA" secondAttribute="centerY" id="sT6-SS-ihv"/>
+                            <constraint firstItem="54z-kF-eam" firstAttribute="top" secondItem="7xB-tH-bpi" secondAttribute="top" constant="704" id="w7C-x6-XCY"/>
+                            <constraint firstItem="U8V-xT-OBz" firstAttribute="leading" secondItem="7xB-tH-bpi" secondAttribute="leading" id="x8a-Wi-0JY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7xB-tH-bpi"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="UsuarioIdentificado" id="usd-3j-MyC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IKZ-Q8-lH4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1420" y="238"/>
+        </scene>
         <!--Login-->
         <scene sceneID="eGc-iJ-jl7">
             <objects>
                 <viewController title="Login" id="ODX-NQ-mRj" customClass="LoginViewController" customModule="My_Card" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FEA-7P-Z6H">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroud-card" translatesAutoresizingMaskIntoConstraints="NO" id="enm-SJ-P0a">
@@ -543,7 +616,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySY-PO-2o2">
-                                <rect key="frame" x="44" y="239.5" width="326" height="379"/>
+                                <rect key="frame" x="44" y="195.5" width="326" height="379"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gD-y0-Avg" userLabel="Logo">
                                         <rect key="frame" x="84" y="34" width="158" height="92"/>
@@ -734,12 +807,12 @@
                     <connections>
                         <outlet property="labelEmail" destination="M4P-mp-5ox" id="QJo-9J-tXX"/>
                         <outlet property="labelSenha" destination="vBT-JJ-Qpk" id="GLK-ge-HEv"/>
-                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="loginSegue" id="mlB-nY-aMJ"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="UsuarioIdentificado" id="oPy-xF-t0y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqJ-Mm-zap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346" y="94"/>
+            <point key="canvasLocation" x="-346" y="-267"/>
         </scene>
     </scenes>
     <resources>
@@ -753,4 +826,8 @@
             <color red="0.082352941176470587" green="0.090196078431372548" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Lr0-8K-SEh"/>
+        <segue reference="oPy-xF-t0y"/>
+    </inferredMetricsTieBreakers>
 </document>
