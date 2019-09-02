@@ -1,3 +1,8 @@
 *.DS_Store
 /Pods/*
 * .xcworkspace
+My Card.xcworkspace/xcuserdata/gcmms.xcuserdatad/xcdebugger/Breakpoints_v2.xcbkptlist
+My Card.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+My Card.xcworkspace/contents.xcworkspacedata
+My Card.xcworkspace/xcuserdata/gcmms.xcuserdatad/UserInterfaceState.xcuserstate
+.DS_Store
