@@ -429,7 +429,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lse-6C-gj3">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="(00) 00000-0000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lse-6C-gj3">
                                         <rect key="frame" x="35" y="441" width="345" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="lse-6C-gj3" secondAttribute="height" multiplier="345:34" id="AxT-UH-XGH"/>
@@ -437,7 +437,7 @@
                                             <constraint firstAttribute="width" constant="345" id="yTZ-gQ-PcY"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="phonePad" keyboardAppearance="alert" returnKeyType="done" textContentType="tel"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.8809128852739726" colorSpace="custom" customColorSpace="sRGB"/>
@@ -665,11 +665,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lua-io-Lf5" userLabel="Cpf">
                                         <rect key="frame" x="21" y="134" width="286" height="74"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPF:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEK-KP-0GX">
-                                                <rect key="frame" x="20" y="26" width="35" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-Mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEK-KP-0GX">
+                                                <rect key="frame" x="8" y="26" width="47" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="Oir-XN-16X"/>
-                                                    <constraint firstAttribute="width" constant="35" id="s0u-Lf-Nmn"/>
+                                                    <constraint firstAttribute="width" secondItem="fEK-KP-0GX" secondAttribute="height" multiplier="47:21" id="UeM-UB-l1T"/>
+                                                    <constraint firstAttribute="width" constant="47" id="nSn-Po-FYK"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="pfh-Pp-5U3"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -692,10 +694,13 @@
                                             <constraint firstAttribute="bottom" secondItem="fEK-KP-0GX" secondAttribute="bottom" constant="27" id="7Dx-xy-rs0"/>
                                             <constraint firstAttribute="bottom" secondItem="M4P-mp-5ox" secondAttribute="bottom" constant="20" id="7Il-Hf-J6g"/>
                                             <constraint firstItem="M4P-mp-5ox" firstAttribute="leading" secondItem="fEK-KP-0GX" secondAttribute="trailing" constant="8" id="EAX-g8-aJL"/>
-                                            <constraint firstItem="fEK-KP-0GX" firstAttribute="leading" secondItem="Lua-io-Lf5" secondAttribute="leading" constant="20" id="K9Z-vL-FPf"/>
                                             <constraint firstItem="fEK-KP-0GX" firstAttribute="top" secondItem="Lua-io-Lf5" secondAttribute="top" constant="26" id="O91-fX-Fkw"/>
+                                            <constraint firstItem="fEK-KP-0GX" firstAttribute="leading" secondItem="Lua-io-Lf5" secondAttribute="leading" constant="8" id="P6p-DI-YsB"/>
                                             <constraint firstItem="M4P-mp-5ox" firstAttribute="leading" secondItem="fEK-KP-0GX" secondAttribute="trailing" constant="8" id="PFH-bb-wSQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="fEK-KP-0GX" secondAttribute="bottom" constant="27" id="ReT-uc-cqM"/>
+                                            <constraint firstItem="fEK-KP-0GX" firstAttribute="top" secondItem="Lua-io-Lf5" secondAttribute="top" constant="26" id="Xza-75-TST"/>
                                             <constraint firstAttribute="trailing" secondItem="M4P-mp-5ox" secondAttribute="trailing" constant="20" id="ZUR-lK-Sue"/>
+                                            <constraint firstItem="M4P-mp-5ox" firstAttribute="leading" secondItem="fEK-KP-0GX" secondAttribute="trailing" constant="8" id="v34-bJ-xCe"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arX-n8-1wv" userLabel="Senha">
@@ -815,7 +820,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqJ-Mm-zap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346" y="-267"/>
+            <point key="canvasLocation" x="-346.37681159420293" y="-267.1875"/>
         </scene>
     </scenes>
     <resources>
@@ -830,7 +835,7 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RYZ-Jy-wTW"/>
-        <segue reference="usd-3j-MyC"/>
+        <segue reference="Lr0-8K-SEh"/>
+        <segue reference="cWv-sh-AWj"/>
     </inferredMetricsTieBreakers>
 </document>
