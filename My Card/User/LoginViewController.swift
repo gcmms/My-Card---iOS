@@ -17,6 +17,8 @@ class LoginViewController: UIViewController {
     var user = userLogin()
     @IBOutlet weak var labelEmail: UITextField!
     @IBOutlet weak var labelSenha: UITextField!
+    @IBOutlet weak var viLoading: UIView!
+    @IBOutlet weak var aiLoading: UIActivityIndicatorView!
     
     /** @var handle
      @brief The handler for the auth state listener, to allow cancelling later.
@@ -31,6 +33,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func btnEntrar(_ sender: Any) {
+        load(show: true)
         let email = labelEmail.text!
         let senha = labelSenha.text!
         Auth.auth().signIn(withEmail:email, password: senha) { (user, error) in
@@ -38,12 +41,22 @@ class LoginViewController: UIViewController {
                 self.performSegue(withIdentifier: "UsuarioIdentificado", sender: self)
             }
             else{
+                self.load(show: false)
                 let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 
                 alertController.addAction(defaultAction)
                 self.present(alertController, animated: true, completion: nil)
             }
+        }
+    }
+    
+    func load(show:Bool) {
+        viLoading.isHidden = !show
+        if show {
+            aiLoading.startAnimating()
+        } else {
+            aiLoading.stopAnimating()
         }
     }
     
